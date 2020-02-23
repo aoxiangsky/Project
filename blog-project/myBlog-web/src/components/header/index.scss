@@ -1,0 +1,94 @@
+.main-header-wrap{
+    height: 64px;
+    background-color: rgb(66, 133, 244);
+    padding: 8px 8px 8px 16px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-topbar-left{
+        width: 220px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        .menu-btn{
+            height: 48px;
+            width: 48px;
+            display: inline-block;
+            text-align: center;
+            font-weight: 500;
+            font-size: 14px;
+            font-style: inherit;
+            font-family: inherit;
+            text-decoration: none;
+            overflow: hidden;
+            background: transparent;
+            white-space: nowrap;
+            line-height: 36px;
+            box-sizing: border-box;
+            position: relative;
+            outline: none;
+            border: 0;
+            &:hover{
+                border-radius: 50%;
+                background-color: rgba(0,0,0,0.12);
+                cursor: pointer;
+            }
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            span{
+                color: #fff;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+        .logo-container{
+            display: flex;
+            align-items: center;
+            line-height: 21px;
+            padding: 0 15px;
+            position: relative;
+            text-align: center;
+            top: 3px;
+            vertical-align: top;
+            width: 182px;
+            height: 50px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .header-topbar-right{
+        height: 100%;
+        width: 200px;
+        position: relative;
+        .week-time{
+            position: absolute;
+            right: 0;
+            font-size: 16px;
+            color: #fff;
+        }
+        .hour-min{
+            font-weight: 500;
+            color: #fff;
+            font-size: 22px;
+            position: absolute;
+            bottom: 0px;
+            right:0px;
+            span{
+                color: #fff;
+                font-size: 14px;
+                padding-left: 8px;
+            }
+        }
+
+    }
+}
