@@ -4,6 +4,8 @@ import NavLeft from '@components/NavLeft/index'
 import Header from '@components/Header/index'
 import './index.less'
 
+import Test from '../main/index'
+
 function Home() {
   return (
     <Row className="home">
@@ -12,10 +14,7 @@ function Home() {
       </Col>
       <Col span={20} className="home-main">
         <Header />
-        <Row>
-          页面主题部分
-          <a href="http://www.w3school.com.cn">W3School</a>
-        </Row>
+        <Row className="home-content" />
       </Col>
     </Row>
   )

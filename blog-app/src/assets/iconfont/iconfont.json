@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7494705",
+      "name": "搜索，放大镜",
+      "font_class": "huabanfuben",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "11756423",
+      "name": "放大镜",
+      "font_class": "V",
+      "unicode": "e729",
+      "unicode_decimal": 59177
+    }
+  ]
+}
