@@ -1,0 +1,27 @@
+.article-main-wrap {
+    padding-top: 20px;
+    background-color: #EAEAEA;
+    padding-left: 120px;
+    display: flex;
+    justify-content: flex-start;
+    .article-card-wrap {
+        background-color: #fff;
+        width: 800px;
+        box-shadow: 3px 2px 8px 8px rgba(0, 0, 0, 0.15) !important;
+        border-radius: 20px;
+        position: relative;
+        margin-bottom: 0px;
+        padding-bottom: 0.5em;
+        word-break: break-word;
+    }
+    .article-menu-wrap {
+        position: fixed;
+        right: 120px;
+        background-color: #fff;
+        width: 200px;
+        box-shadow: 3px 2px 8px 8px rgba(0, 0, 0, 0.15) !important;
+        border-radius: 20px;
+        margin-left: 50px;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,14 @@
+html,body {
+  box-sizing: border-box;
+  cursor: default;
+}
+ 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// 默哀滤镜
+// html {
+//   filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+//   -webkit-filter: grayscale(100%);
+// }

@@ -1,0 +1,53 @@
+//定位全屏
+@mixin allcover {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+//transform上下左右居中
+@mixin allct {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 模态窗背景
+@mixin modalbg($color-bg: rgba(0, 0, 0, 0.3)) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-bg;
+}
+
+//2倍图、3倍图，默认2倍图
+@mixin bg-image($url) {
+  background-image: url("./images/"+$url+"@2x.png");
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+    background-image: url("./images/"+$url+"@3x.png");
+  }
+}
+
+// 单行溢出省略 ~
+@mixin ellipsis-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 清除浮动
+@mixin clear() {
+  &:after {
+    content: ".";
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}

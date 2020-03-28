@@ -1,0 +1,89 @@
+.sidenav-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(50, 50, 50, 0.5);
+  opacity: 0;
+  z-index: 59;
+  transition: all 0.6s ease;
+  visibility: hidden;
+}
+.sidenav-mask_active {
+  transition: all 0.6s ease 0.1s;
+  opacity: 1;
+  visibility: visible;
+}
+.sidenav-bar-wrap {
+  z-index: 101;
+  background-color: rgb(255, 255, 255);
+  min-width: 288px;
+  width: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.18);
+  transform: translateX(-288px);
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  .logo{
+    width: 288px;
+    height: 64px;
+    border-bottom: 1px solid #eee;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .logo-title{
+      width: 160px;
+      height: 50px;
+      padding-left: 10px;
+    }
+    .logo-note{
+      height: 26px;
+      width: 102px;
+      position: absolute;
+      bottom: 1px;
+      right: 6px;
+    }
+  }
+  .main-menu-wrap{
+    margin-bottom: 8px;
+    padding: 8px 0px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    li{
+      color: #333;
+      height: 47px;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0 24px;
+      cursor: pointer;
+      &:hover{
+        background-color: rgba(0,0,0,0.04);
+      }
+      .menu-logo{
+        font-size: 24px;
+        cursor: pointer;
+      }
+      .menu-name{
+        font-size: 14px;
+        padding-left: 24px;
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 48px;
+        height: 48px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.sidenav-bar-wrap_active {
+  transform: translateX(0);
+  visibility: visible;
+}
